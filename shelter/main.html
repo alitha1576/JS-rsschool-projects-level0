@@ -17,6 +17,12 @@
                     <h1>Cozy House</h1>
                     <span class="nav-logo-text">Shelter for pets in Boston</span>
                 </a>
+                <div class="burger-menu">
+                    <input type="checkbox" id="burger" class="burger-button">
+                    <label for="burger" class="burger-icon">
+                        <img src="assets/svg/Burger-main.svg" alt="burger-button-img" class="burger-img-main">
+                    </label>
+                </div>
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#about" class="nav-link pointed">About the shelter</a></li>
                     <li class="nav-item"><a href="pets.html" class="nav-link">Our pets</a></li>
@@ -84,6 +90,14 @@
                             <img src="assets/svg/Arrow-right.svg" alt="right-button">
                         </div>
                     </div>
+                    <div class="mobile-slider-button">
+                        <div class="slider-button slider-button-main">
+                            <img src="assets/svg/Arrow-left.svg" alt="left-button">
+                        </div>
+                        <div class="slider-button slider-button-main">
+                            <img src="assets/svg/Arrow-right.svg" alt="right-button">
+                        </div>
+                    </div>
                     <button class="button button-orange" id="know-rest">Get to know the rest</button>
                 </section>
             </div>
@@ -92,7 +106,7 @@
             <section class="help">
                 <h3>How you can help <span class="break-line">our shelter</span></h3>
                 <div class="icons">
-                    <div class="row first-row">
+                    <div class="row">
                         <div class="icon"><img src="assets/svg/pet-food.svg" alt="Pet food">
                             <h4>Pet food</h4>
                         </div>
@@ -108,8 +122,6 @@
                         <div class="icon"><img src="assets/svg/shampoos.svg" alt="Shampoos">
                             <h4>Shampoos</h4>
                         </div>
-                    </div>
-                    <div class="row second-row">
                         <div class="icon"><img src="assets/svg/vitamins.svg" alt="Vitamins">
                             <h4>Vitamins</h4>
                         </div>
@@ -165,17 +177,18 @@
             <div class="footer-visit">
                 <h3 class="white-text">We are waiting for your visit</h3>
                 <div class="contacts">
-                    <img src="assets/svg/icon-marker.svg" alt="adress">
-                    <h4 class="orange-text"><a href="https://maps.app.goo.gl/KwkVaFQPnAWrDtRL9" class="footer-link"
-                            target="_blank">18 South Park, London</a></h4>
-                </div>
-                <div class="contacts">
-                    <img src="assets/svg/icon-marker.svg" alt="adress">
+                    <img src="assets/svg/icon-marker.svg" alt="adress" class="adress-img">
                     <h4 class="orange-text"><a href="https://maps.app.goo.gl/KwkVaFQPnAWrDtRL9" class="footer-link"
                             target="_blank">1 Central Street, Boston (entrance from the store)</a></h4>
                 </div>
+                <div class="contacts contacts-last">
+                    <img src="assets/svg/icon-marker.svg" alt="adress" class="adress-img">
+                    <h4 class="orange-text"><a href="https://maps.app.goo.gl/KwkVaFQPnAWrDtRL9" class="footer-link"
+                            target="_blank">18 South Park, London</a></h4>
+                </div>
             </div>
             <div class="footer-img"></div>
+            <div class="footer-img-mobile"></div>
         </div>
     </footer>
     <script src="script.js"></script>
