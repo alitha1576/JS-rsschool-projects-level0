@@ -17,18 +17,20 @@
                     <h1>Cozy House</h1>
                     <span class="nav-logo-text">Shelter for pets in Boston</span>
                 </a>
-                <div class="burger-menu">
-                    <input type="checkbox" id="burger" class="burger-button">
-                    <label for="burger" class="burger-icon">
-                        <img src="assets/svg/Burger-main.svg" alt="burger-button-img" class="burger-img-main">
-                    </label>
+                <div>
+                    <div class="burger-menu">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
                 </div>
-                <ul class="nav-list">
+                <ul class="nav-list nav-list-transformed">
                     <li class="nav-item"><a href="#about" class="nav-link pointed">About the shelter</a></li>
                     <li class="nav-item"><a href="pets.html" class="nav-link">Our pets</a></li>
                     <li class="nav-item"><a href="#help-center" class="nav-link">Help the shelter</a></li>
                     <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
                 </ul>
+                <div class="overlay hidden"></div>
             </nav>
             <div class="header-block">
                 <div class="header-text">
@@ -58,35 +60,98 @@
                 </div>
             </section>
         </div>
+
+        <div class="popup-container">
+            <div class="slider-button close-button">
+                <img src="assets/svg/close-button.svg" alt="close-button">
+            </div>
+            <div class="popup">
+                <div class="pet-img-popup">
+                    <img src="assets/img/pets-jennifer.png" alt="">
+                </div>
+                <div class="popup-content">
+                    <h3 class="pet-name">Jennifer</h3>
+                    <h4><span class="pet-type">Dog</span> - <span class="pet-breed">Labrador</span></h4>
+                    <h5 class="pet-description">Jennifer is a sweet 2 months old Labrador that is patiently waiting to
+                        find a new forever home. This girl really enjoys being able to go outside to run and play, but
+                        won't hesitate to play up a storm in the house if she has all of her favorite toys.</h5>
+                    <ul>
+                        <li>
+                            <strong>Age:</strong> <span class="pet-age">2 months</span>
+                        </li>
+                        <li>
+                            <strong>Inoculations:</strong> <span class="pet-inoculations">none</span>
+                        </li>
+                        <li>
+                            <strong>Diseases:</strong> <span class="pet-diseases">none</span>
+                        </li>
+                        <li>
+                            <strong>Parasites:</strong> <span class="pet-parasites">none</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
         <div class="fill-background">
             <div class="container main-container pets-container" id="our-pets">
                 <section class="pets">
                     <h3>Our friends who <span class="break-line">are looking for a house</span></h3>
                     <div class="slider">
-                        <div class="slider-button slider-button-main">
+                        <div class="slider-button slider-button-left slider-button-main">
                             <img src="assets/svg/Arrow-left.svg" alt="left-button">
                         </div>
                         <div class="carts">
-                            <div class="cart">
+                            <div class="cart active">
                                 <div class="cart-img"><img src="assets/img/pets-katrine.png" alt="Katrine"></div>
                                 <h4>Katrine</h4>
                                 <button class="button white-button"><span class="white-button-text">Learn
                                         more</span></button>
                             </div>
-                            <div class="cart">
+                            <div class="cart active">
                                 <div class="cart-img"><img src="assets/img/pets-jennifer.png" alt="Jennifer"></div>
                                 <h4>Jennifer</h4>
                                 <button class="button white-button"><span class="white-button-text">Learn
                                         more</span></button>
                             </div>
-                            <div class="cart">
+                            <div class="cart active">
                                 <div class="cart-img"><img src="assets/img/pets-woody.png" alt="Woody"></div>
                                 <h4>Woody</h4>
                                 <button class="button white-button"><span class="white-button-text">Learn
                                         more</span></button>
                             </div>
+                            <div class="cart">
+                                <div class="cart-img"><img src="assets/img/pets-sophia.png" alt="Katrine"></div>
+                                <h4>Sophia</h4>
+                                <button class="button white-button"><span class="white-button-text">Learn
+                                        more</span></button>
+                            </div>
+                            <div class="cart">
+                                <div class="cart-img"><img src="assets/img/pets-timmy.png" alt="Katrine"></div>
+                                <h4>Timmy</h4>
+                                <button class="button white-button"><span class="white-button-text">Learn
+                                        more</span></button>
+                            </div>
+                            <div class="cart">
+                                <div class="cart-img"><img src="assets/img/pets-charly.png" alt="Katrine"></div>
+                                <h4>Charly</h4>
+                                <button class="button white-button"><span class="white-button-text">Learn
+                                        more</span></button>
+                            </div>
+                            <div class="cart">
+                                <div class="cart-img"><img src="assets/img/pets-scarlet.png" alt="Katrine"></div>
+                                <h4>Scarlett</h4>
+                                <button class="button white-button"><span class="white-button-text">Learn
+                                        more</span></button>
+                            </div>
+                            <div class="cart">
+                                <div class="cart-img"><img src="assets/img/pets-freddie.png" alt="Katrine"></div>
+                                <h4>Freddie</h4>
+                                <button class="button white-button"><span class="white-button-text">Learn
+                                        more</span></button>
+                            </div>
                         </div>
-                        <div class="slider-button slider-button-main">
+                        <div class="slider-button slider-button-right slider-button-main">
                             <img src="assets/svg/Arrow-right.svg" alt="right-button">
                         </div>
                     </div>
