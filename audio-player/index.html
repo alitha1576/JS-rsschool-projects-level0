@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="player">
+            <div class="player-img"></div>
+            <div class="player-controls">
+                <p id="singer-name" class="text singer"></p>
+                <p id="song-name" class="text song">Don't Start now</p>
+                <div class="progress-bar">
+                    <p id='end-time' class="text progress-text">3:23</p>
+                    <input type="range" class="bar" id="progress" min="0" max="100" step="1">
+                    <span class="text progress-text current-time">0:00</span>
+                </div>
+                <div class="controls">
+                    <div class="backward backward-forward-buttons"><img src="assets/svg/backward.png" alt="backward button"></div>
+                    <div class="play"><img src="assets/svg/play.png" class="play-button" alt="play button"></div>
+                    <div class="forward backward-forward-buttons"><img src="assets/svg/forward.png" alt="forward button"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span class="text">2024</span>
+<a href=""><img class="footer-img" src="assets/svg/Octicons-mark-github.svg" alt="Github"></a>
+<a href="https://rs.school/courses/javascript-preschool-ru"> <img src="assets/svg/rss-logo.svg" class="footer-img" alt="RS-school logo"> </a>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
