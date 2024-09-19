@@ -45,14 +45,24 @@ function changeText() {
     document.getElementById('song-name').innerHTML=`${songs[playNum]}`;
 }
 
-function currentSongTime () {
-    player.querySelector('.current-time').innerHTML = formatSongDuration(audio.currentTime);
+
+function currentSongTime() {
+    document.querySelector('.current-time').innerHTML = formatSongDuration(audio.currentTime);
 }
+
 
 function formatSongDuration(number) {
     let minutes = number / 60;
     let seconds = number % 60;
-    return (Math.round(minutes) + ":" + Math.round(seconds));
+    if (seconds < 10) {
+        return (Math.floor(minutes) + ":0" + Math.floor(seconds));
+    } else {
+        return (Math.floor(minutes) + ":" + Math.floor(seconds));
+    }
+}
+
+function updateDuration () {
+    document.getElementById('end-time').innerHTML=formatSongDuration(audio.duration);
 }
 
 function playNext() {
@@ -79,7 +89,8 @@ forwardButton.addEventListener('click', playNext);
 audio.addEventListener('timeupdate', handleProgress);
 
 function handleProgress () {
-    progressBar.value = audio.currentTime / audio.duration * 100;
+    progressBar.value = audio.currentTime / (audio.duration || 1) * 100;
+    document.querySelector('.current-time').innerHTML = formatSongDuration(audio.currentTime);
 }
 
 
@@ -89,3 +100,4 @@ function scrub (event) {
     }
 
 progressBar.addEventListener('click', scrub);
+
